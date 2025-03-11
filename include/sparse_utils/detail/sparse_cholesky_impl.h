@@ -131,7 +131,9 @@ SparseCholesky<T>::~SparseCholesky() {
   delete[] snode_size;
   delete[] var_to_snode;
   delete[] snode_to_first_var;
+  delete[] colp;
   delete[] data_ptr;
+  delete[] rows;
   delete[] data;
 
   if (perm) {
